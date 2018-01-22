@@ -125,6 +125,7 @@ GameObject:
   - component: {fileID: 733006686}
   - component: {fileID: 733006685}
   - component: {fileID: 733006684}
+  - component: {fileID: 733006688}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -194,6 +195,28 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 346.524, z: 0}
+--- !u!114 &733006688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 733006683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ad5467732270489caa1d54fe84f1618, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  horizontalResolution: 200
+  verticalResolution: 200
+  numColors: 8
+  color0: {r: 0, g: 0, b: 0, a: 1}
+  color1: {r: 1, g: 1, b: 1, a: 1}
+  color2: {r: 0.066014275, g: 0.081850275, b: 0.24264705, a: 1}
+  color3: {r: 0.9069264, g: 0.8379109, b: 0.9264706, a: 1}
+  color4: {r: 0.70891, g: 0.68393165, b: 0.8088235, a: 1}
+  color5: {r: 0.20105742, g: 0.1106185, b: 0.4852941, a: 1}
+  color6: {r: 0.6317583, g: 0.85447025, b: 0.9044118, a: 1}
+  color7: {r: 0.21505177, g: 0.0610943, b: 0.8308824, a: 1}
 --- !u!1 &1845842935
 GameObject:
   m_ObjectHideFlags: 0

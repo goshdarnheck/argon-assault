@@ -525,8 +525,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1912331216305882}
-  m_LocalRotation: {x: 0.04755253, y: -0.15280868, z: 0.007361523, w: 0.9870837}
-  m_LocalPosition: {x: -2.1204827, y: -0.71360385, z: 3.95}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.0045128, y: -1.0406, z: 3.95}
   m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
   m_Children:
   - {fileID: 4088908119764428}
@@ -551,7 +551,7 @@ Transform:
   - {fileID: 4457525704174892}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4649248252669112
 Transform:
   m_ObjectHideFlags: 1
@@ -670,7 +670,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: bcee6a89ac0b4554e9de8b962b0cca72, type: 2}
+  - {fileID: 2100000, guid: 30694d7225baf8640b5e921f75f3ef1e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -738,7 +738,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: bcee6a89ac0b4554e9de8b962b0cca72, type: 2}
+  - {fileID: 2100000, guid: 30694d7225baf8640b5e921f75f3ef1e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -772,7 +772,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: bcee6a89ac0b4554e9de8b962b0cca72, type: 2}
+  - {fileID: 2100000, guid: 30694d7225baf8640b5e921f75f3ef1e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -908,7 +908,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: bcee6a89ac0b4554e9de8b962b0cca72, type: 2}
+  - {fileID: 2100000, guid: 30694d7225baf8640b5e921f75f3ef1e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1199,7 +1199,7 @@ Light:
   serializedVersion: 8
   m_Type: 0
   m_Color: {r: 0.99918866, g: 0.9852941, b: 1, a: 1}
-  m_Intensity: 1
+  m_Intensity: 1.5
   m_Range: 266.61
   m_SpotAngle: 51
   m_CookieSize: 10
@@ -1271,7 +1271,7 @@ Light:
   serializedVersion: 8
   m_Type: 0
   m_Color: {r: 0.99918866, g: 0.9852941, b: 1, a: 1}
-  m_Intensity: 1
+  m_Intensity: 1.5
   m_Range: 266.61
   m_SpotAngle: 51
   m_CookieSize: 10
@@ -1307,7 +1307,7 @@ Light:
   serializedVersion: 8
   m_Type: 0
   m_Color: {r: 0.991439, g: 0.97075045, b: 0.99264705, a: 1}
-  m_Intensity: 1
+  m_Intensity: 1.5
   m_Range: 655.7
   m_SpotAngle: 63
   m_CookieSize: 10
@@ -1412,7 +1412,7 @@ ParticleSystem:
   moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 1922486991
+  randomSeed: -997911842
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -4729,7 +4729,7 @@ ParticleSystem:
   moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 144923288
+  randomSeed: -1298111225
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -8046,7 +8046,7 @@ ParticleSystem:
   moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 1230694706
+  randomSeed: -849225399
   InitialModule:
     serializedVersion: 3
     enabled: 1

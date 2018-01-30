@@ -3,13 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class MusicPlayer : MonoBehaviour {
+public class SceneLoader : MonoBehaviour {
 
     [SerializeField] float levelLoadDelay = 5f;
-
-    private void Awake() {
-        DontDestroyOnLoad(gameObject);
-    }
 
     void Start() {
         Invoke("LoadLevel", levelLoadDelay);

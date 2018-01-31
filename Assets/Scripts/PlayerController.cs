@@ -3,29 +3,41 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
 
-public class Player : MonoBehaviour {
+public class PlayerController : MonoBehaviour {
 
+    // todo work-out why sometimes slow on first play of scene
+
+    [Header("General")]
     [Tooltip("In ms^-1")] [SerializeField] float xSpeed = 8f;
     [Tooltip("In ms^-1")] [SerializeField] float ySpeed = 8f;
     [Tooltip("In m")] [SerializeField] float xLimit = 5f;
     [Tooltip("In m")] [SerializeField] float yLimit = 3f;
 
+    [Header("Screen-position Based")]
     [SerializeField] float positionPitchFactor = -10f;
-    [SerializeField] float controlPitchFactor = -20f;
-
-    [SerializeField] float controlRollFactor = -20f;
-
     [SerializeField] float positionYawFactor = 10f;
 
+    [Header("Control-throw Based")]
+    [SerializeField] float controlPitchFactor = -20f;
+    [SerializeField] float controlRollFactor = -20f;
+
     float xThrow, yThrow;
+    bool isControlEnabled = true;
 
     void Start () {
         
     }
-	
-	void Update () {
-        ProcessTranslation();
-        ProcessRotation();
+
+    void Update () {
+        if (isControlEnabled) {
+            ProcessTranslation();
+            ProcessRotation();
+        }
+    }
+
+    private void OnPlayerDeath() { // called by string reference
+        isControlEnabled = false;
+
     }
 
     private void ProcessTranslation() {

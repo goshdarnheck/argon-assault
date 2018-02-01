@@ -7,12 +7,10 @@ public class Enemy : MonoBehaviour {
     [SerializeField] GameObject deathFX;
     [SerializeField] Transform parent;
 
-	// Use this for initialization
 	void Start () {
         AddNonTriggerBoxCollider();
 	}
 	
-	// Update is called once per frame
 	void Update () {
 		
 	}

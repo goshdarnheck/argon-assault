@@ -6,7 +6,7 @@ public class Enemy : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		
+        AddNonTriggerBoxCollider();
 	}
 	
 	// Update is called once per frame
@@ -14,8 +14,17 @@ public class Enemy : MonoBehaviour {
 		
 	}
 
+    private void AddNonTriggerBoxCollider() {
+        BoxCollider boxCollider = gameObject.AddComponent<BoxCollider>();
+        boxCollider.isTrigger = false;
+
+        GameObject shipPrefab = gameObject.transform.GetChild(0).gameObject;
+        Renderer shipPrefabRenderer = shipPrefab.GetComponent<Renderer>();
+        boxCollider.size = new Vector3(shipPrefabRenderer.bounds.size.x, shipPrefabRenderer.bounds.size.y, shipPrefabRenderer.bounds.size.z);
+    }
+
     private void OnParticleCollision(GameObject other) {
-        print("Particles collied with enemy" + gameObject.name);
+        // print("Particles collied with enemy" + gameObject.name);
         Destroy(gameObject);
     }
 }

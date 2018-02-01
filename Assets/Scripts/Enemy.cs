@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour {
 
+    [SerializeField] GameObject deathFX;
+
 	// Use this for initialization
 	void Start () {
         AddNonTriggerBoxCollider();
@@ -25,6 +27,9 @@ public class Enemy : MonoBehaviour {
 
     private void OnParticleCollision(GameObject other) {
         // print("Particles collied with enemy" + gameObject.name);
+
+        Instantiate(deathFX, transform.position, Quaternion.identity);
+
         Destroy(gameObject);
     }
 }
